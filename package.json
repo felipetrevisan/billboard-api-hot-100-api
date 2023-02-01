@@ -16,8 +16,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": ">=16.18",
-    "npm": ">=8.18"
+    "node": "^14"
   },
   "dependencies": {
     "@vercel/node": "2.5.6",
