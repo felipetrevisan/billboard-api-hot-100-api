@@ -4,16 +4,12 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "vercel dev",
+    "deploy" : "vercel deploy --prod",
     "dev": "tsx src/server.ts",
-    "start": "node dist/server.js",
-    "prebuild": "rimraf dist",
-    "build": "tsc",
-    "pre-prod": "rimraf dist && npm run build",
-    "predev": "npm run build",
     "format": "prettier --write \"src/**/*.(js|ts)\"",
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --fix --ext .js,.ts",
-    "prepare": "npm run build",
     "preversion": "npm run lint"
   },
   "keywords": [],
